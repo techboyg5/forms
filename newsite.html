@@ -10,13 +10,10 @@
     <div class="container">
       <h1>techboyg5 Website Service - New Site Request Form</h1>
       <form name="newsite" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <h2>The basics</h2>
         <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" name="email" required>
+          <label for="subject">Site Title</label>
+          <input type="text" class="form-control" id="title" name="title" required>
         </div>
         <div class="form-group">
           <label for="subject">Site Address</label>
@@ -27,9 +24,24 @@
             <input type="text" class="form-control" id="url" name="url" required>
           </div>
         </div>
+        <h2>The personal stuff</h2>
         <div class="form-group">
-          <label for="message">Message</label>
-          <textarea class="form-control" id="message" name="message" rows="10" required></textarea>
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <h2>Now, let's talk about the site!</h2>
+        <div class="form-group">
+          <label for="message">Tell us about your website</label>
+          <textarea class="form-control" id="message" name="message" rows="10" aria-describedby="messageHelp" required></textarea>
+          <small id="emailHelp" class="form-text text-muted">There is no character limit. Please don't include personal information.</small>
+        </div>
+        <div class="form-group">
+          <label for="attachments">If you need to add attachments, </label>
+          <input type="file" class="form-control" id="attachments" name="attachments" multiple>
         </div>
         <div class="form-group">
           <div data-netlify-recaptcha="true"></div>

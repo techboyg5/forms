@@ -10,7 +10,7 @@
     <div class="container">
       <h1>techboyg5 Website Service - New Site Request Form</h1>
       <p>Welcome to the Website Service! To add a new site, simply fill out the form below.</p>
-      <form name="newsite" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="hp">
+      <form name="newsite" method="POST" data-netlify="true" data-netlify-recaptcha="true">
         <div class="form-row">
           <div class="form-group col-md">
             <label for="subject">Site Title</label>
@@ -41,10 +41,6 @@
           <label for="message">Message</label>
           <textarea class="form-control" id="message" name="message" rows="10" aria-describedby="messageHelp" required></textarea>
           <small id="emailHelp" class="form-text text-muted">Please make your message as detailed as possible. If you'd like to upload files, please use Google Drive or OneDrive. Please don't include personal information.</small>
-        </div>
-        <div class="form-group d-none">
-          <label for="hp">Leave blank</label>
-          <input type="text" class="form-control" id="hp" name="hp">
         </div>
         <div class="form-group">
           <div data-netlify-recaptcha="true"></div>

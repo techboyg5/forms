@@ -28,8 +28,12 @@
           <textarea class="form-control" id="message" name="message" rows="10" required></textarea>
         </div>
         <div class="form-group">
-          <label for="files">Attachments</label>
-          <input type="file" id="files" name="files" class="form-control" multiple>
+          <div class="custom-file mt-2">
+            <input type="file" id="files" name="files" multiple class="custom-file-input">
+            <label class="custom-file-label" for="files">
+              <span class="d-inline-block text-truncate w-75">Add attachments</span>
+            </label>
+          </div>
         </div>
         <div class="form-group">
           <div data-netlify-recaptcha="true"></div>

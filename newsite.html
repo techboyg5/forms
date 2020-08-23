@@ -13,17 +13,19 @@
       <p>Please take your time to fill out this form. While you might think it is long, it's pretty easy and straightforward.</p>
       <form name="newsite" method="POST" data-netlify="true" data-netlify-recaptcha="true">
         <h2>The basics</h2>
-        <div class="form-group">
-          <label for="subject">Site Title</label>
-          <input type="text" class="form-control" id="title" name="title" required>
-        </div>
-        <div class="form-group">
-          <label for="subject">Site Address</label>
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <div class="input-group-text">techboyg5blog.com/</div>
+        <div class="form-row">
+          <div class="form-group col-sm">
+            <label for="subject">Site Title</label>
+            <input type="text" class="form-control" id="title" name="title" required>
+          </div>
+          <div class="form-group col-sm">
+            <label for="subject">Site Address</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">techboyg5blog.com/</div>
+              </div>
+              <input type="text" class="form-control" id="url" name="url" required>
             </div>
-            <input type="text" class="form-control" id="url" name="url" required>
           </div>
         </div>
         <h2>The personal stuff</h2>
@@ -35,6 +37,7 @@
           <div class="form-group col-sm">
             <label for="email">Email</label>
             <input type="email" class="form-control" id="email" name="email" required>
+            <small id="emailHelp" class="form-text text-muted">Your email address will not be published, and will only be used to reach you, as well as to give you access to your website.</small>
           </div>
         </div>
         <h2>Now, let's talk about the site!</h2>
